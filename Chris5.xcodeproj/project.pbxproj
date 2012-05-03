@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A501D153155207620025B052 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A501D152155207620025B052 /* MessageCell.m */; };
+		A501D15715520B4A0025B052 /* chrishulbertclosed.png in Resources */ = {isa = PBXBuildFile; fileRef = A501D15515520B4A0025B052 /* chrishulbertclosed.png */; };
+		A501D15815520B4A0025B052 /* chrishulbertopen.png in Resources */ = {isa = PBXBuildFile; fileRef = A501D15615520B4A0025B052 /* chrishulbertopen.png */; };
+		A512A81F1551ED8200B119AF /* MessageEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = A512A81E1551ED8200B119AF /* MessageEditController.m */; };
+		A59027791551274000E2AA71 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59027781551274000E2AA71 /* UIKit.framework */; };
+		A590277B1551274000E2AA71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A590277A1551274000E2AA71 /* Foundation.framework */; };
+		A590277D1551274000E2AA71 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A590277C1551274000E2AA71 /* CoreGraphics.framework */; };
+		A59027831551274000E2AA71 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A59027811551274000E2AA71 /* InfoPlist.strings */; };
+		A59027851551274000E2AA71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A59027841551274000E2AA71 /* main.m */; };
+		A59027891551274000E2AA71 /* chubbsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A59027881551274000E2AA71 /* chubbsAppDelegate.m */; };
+		A590278C1551274000E2AA71 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A590278A1551274000E2AA71 /* MainStoryboard_iPhone.storyboard */; };
+		A590278F1551274000E2AA71 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A590278D1551274000E2AA71 /* MainStoryboard_iPad.storyboard */; };
+		A59027921551274000E2AA71 /* chubbsMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59027911551274000E2AA71 /* chubbsMasterViewController.m */; };
+		A59027951551274000E2AA71 /* chubbsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59027941551274000E2AA71 /* chubbsDetailViewController.m */; };
+		A59027D315515C3E00E2AA71 /* NewMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59027D215515C3E00E2AA71 /* NewMessageController.m */; };
+		A59027E01551688E00E2AA71 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A59027D61551688E00E2AA71 /* FMDatabase.m */; };
+		A59027E11551688E00E2AA71 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A59027D81551688E00E2AA71 /* FMDatabaseAdditions.m */; };
+		A59027E21551688E00E2AA71 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = A59027DA1551688E00E2AA71 /* FMDatabasePool.m */; };
+		A59027E31551688E00E2AA71 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A59027DC1551688E00E2AA71 /* FMDatabaseQueue.m */; };
+		A59027E51551688E00E2AA71 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A59027DF1551688E00E2AA71 /* FMResultSet.m */; };
+		A59027E7155168C200E2AA71 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A59027E6155168C200E2AA71 /* libsqlite3.0.dylib */; };
+		A59027EA155168F100E2AA71 /* Messages.m in Sources */ = {isa = PBXBuildFile; fileRef = A59027E9155168F100E2AA71 /* Messages.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A501D151155207610025B052 /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
+		A501D152155207620025B052 /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
+		A501D15515520B4A0025B052 /* chrishulbertclosed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chrishulbertclosed.png; path = Chris5/chrishulbertclosed.png; sourceTree = "<group>"; };
+		A501D15615520B4A0025B052 /* chrishulbertopen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chrishulbertopen.png; path = Chris5/chrishulbertopen.png; sourceTree = "<group>"; };
+		A512A81D1551ED8200B119AF /* MessageEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageEditController.h; sourceTree = "<group>"; };
+		A512A81E1551ED8200B119AF /* MessageEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageEditController.m; sourceTree = "<group>"; };
+		A59027741551274000E2AA71 /* Chris5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chris5.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A59027781551274000E2AA71 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A590277A1551274000E2AA71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A590277C1551274000E2AA71 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A59027801551274000E2AA71 /* Chris5-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Chris5-Info.plist"; sourceTree = "<group>"; };
+		A59027821551274000E2AA71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A59027841551274000E2AA71 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A59027861551274000E2AA71 /* Chris5-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chris5-Prefix.pch"; sourceTree = "<group>"; };
+		A59027871551274000E2AA71 /* chubbsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chubbsAppDelegate.h; sourceTree = "<group>"; };
+		A59027881551274000E2AA71 /* chubbsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chubbsAppDelegate.m; sourceTree = "<group>"; };
+		A590278B1551274000E2AA71 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		A590278E1551274000E2AA71 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		A59027901551274000E2AA71 /* chubbsMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chubbsMasterViewController.h; sourceTree = "<group>"; };
+		A59027911551274000E2AA71 /* chubbsMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chubbsMasterViewController.m; sourceTree = "<group>"; };
+		A59027931551274000E2AA71 /* chubbsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chubbsDetailViewController.h; sourceTree = "<group>"; };
+		A59027941551274000E2AA71 /* chubbsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chubbsDetailViewController.m; sourceTree = "<group>"; };
+		A59027D115515C3E00E2AA71 /* NewMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewMessageController.h; sourceTree = "<group>"; };
+		A59027D215515C3E00E2AA71 /* NewMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewMessageController.m; sourceTree = "<group>"; };
+		A59027D51551688E00E2AA71 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = fmdb/src/FMDatabase.h; sourceTree = "<group>"; };
+		A59027D61551688E00E2AA71 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = fmdb/src/FMDatabase.m; sourceTree = "<group>"; };
+		A59027D71551688E00E2AA71 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = fmdb/src/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		A59027D81551688E00E2AA71 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = fmdb/src/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		A59027D91551688E00E2AA71 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = fmdb/src/FMDatabasePool.h; sourceTree = "<group>"; };
+		A59027DA1551688E00E2AA71 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = fmdb/src/FMDatabasePool.m; sourceTree = "<group>"; };
+		A59027DB1551688E00E2AA71 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = fmdb/src/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		A59027DC1551688E00E2AA71 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = fmdb/src/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		A59027DE1551688E00E2AA71 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = fmdb/src/FMResultSet.h; sourceTree = "<group>"; };
+		A59027DF1551688E00E2AA71 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = fmdb/src/FMResultSet.m; sourceTree = "<group>"; };
+		A59027E6155168C200E2AA71 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		A59027E8155168F000E2AA71 /* Messages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Messages.h; sourceTree = "<group>"; };
+		A59027E9155168F100E2AA71 /* Messages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Messages.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A59027711551274000E2AA71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59027E7155168C200E2AA71 /* libsqlite3.0.dylib in Frameworks */,
+				A59027791551274000E2AA71 /* UIKit.framework in Frameworks */,
+				A590277B1551274000E2AA71 /* Foundation.framework in Frameworks */,
+				A590277D1551274000E2AA71 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A59027691551274000E2AA71 = {
+			isa = PBXGroup;
+			children = (
+				A501D15515520B4A0025B052 /* chrishulbertclosed.png */,
+				A501D15615520B4A0025B052 /* chrishulbertopen.png */,
+				A59027E6155168C200E2AA71 /* libsqlite3.0.dylib */,
+				A590277E1551274000E2AA71 /* Chris5 */,
+				A59027771551274000E2AA71 /* Frameworks */,
+				A59027751551274000E2AA71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A59027751551274000E2AA71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A59027741551274000E2AA71 /* Chris5.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A59027771551274000E2AA71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A59027D41551687E00E2AA71 /* FMDB */,
+				A59027781551274000E2AA71 /* UIKit.framework */,
+				A590277A1551274000E2AA71 /* Foundation.framework */,
+				A590277C1551274000E2AA71 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A590277E1551274000E2AA71 /* Chris5 */ = {
+			isa = PBXGroup;
+			children = (
+				A59027871551274000E2AA71 /* chubbsAppDelegate.h */,
+				A59027881551274000E2AA71 /* chubbsAppDelegate.m */,
+				A590278A1551274000E2AA71 /* MainStoryboard_iPhone.storyboard */,
+				A590278D1551274000E2AA71 /* MainStoryboard_iPad.storyboard */,
+				A59027901551274000E2AA71 /* chubbsMasterViewController.h */,
+				A59027911551274000E2AA71 /* chubbsMasterViewController.m */,
+				A59027931551274000E2AA71 /* chubbsDetailViewController.h */,
+				A59027941551274000E2AA71 /* chubbsDetailViewController.m */,
+				A59027D115515C3E00E2AA71 /* NewMessageController.h */,
+				A59027D215515C3E00E2AA71 /* NewMessageController.m */,
+				A590277F1551274000E2AA71 /* Supporting Files */,
+				A59027E8155168F000E2AA71 /* Messages.h */,
+				A59027E9155168F100E2AA71 /* Messages.m */,
+				A512A81D1551ED8200B119AF /* MessageEditController.h */,
+				A512A81E1551ED8200B119AF /* MessageEditController.m */,
+				A501D151155207610025B052 /* MessageCell.h */,
+				A501D152155207620025B052 /* MessageCell.m */,
+			);
+			path = Chris5;
+			sourceTree = "<group>";
+		};
+		A590277F1551274000E2AA71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A59027801551274000E2AA71 /* Chris5-Info.plist */,
+				A59027811551274000E2AA71 /* InfoPlist.strings */,
+				A59027841551274000E2AA71 /* main.m */,
+				A59027861551274000E2AA71 /* Chris5-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A59027D41551687E00E2AA71 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				A59027D51551688E00E2AA71 /* FMDatabase.h */,
+				A59027D61551688E00E2AA71 /* FMDatabase.m */,
+				A59027D71551688E00E2AA71 /* FMDatabaseAdditions.h */,
+				A59027D81551688E00E2AA71 /* FMDatabaseAdditions.m */,
+				A59027D91551688E00E2AA71 /* FMDatabasePool.h */,
+				A59027DA1551688E00E2AA71 /* FMDatabasePool.m */,
+				A59027DB1551688E00E2AA71 /* FMDatabaseQueue.h */,
+				A59027DC1551688E00E2AA71 /* FMDatabaseQueue.m */,
+				A59027DE1551688E00E2AA71 /* FMResultSet.h */,
+				A59027DF1551688E00E2AA71 /* FMResultSet.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A59027731551274000E2AA71 /* Chris5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A59027981551274000E2AA71 /* Build configuration list for PBXNativeTarget "Chris5" */;
+			buildPhases = (
+				A59027701551274000E2AA71 /* Sources */,
+				A59027711551274000E2AA71 /* Frameworks */,
+				A59027721551274000E2AA71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chris5;
+			productName = Chris5;
+			productReference = A59027741551274000E2AA71 /* Chris5.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A590276B1551274000E2AA71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = A590276E1551274000E2AA71 /* Build configuration list for PBXProject "Chris5" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A59027691551274000E2AA71;
+			productRefGroup = A59027751551274000E2AA71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A59027731551274000E2AA71 /* Chris5 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A59027721551274000E2AA71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59027831551274000E2AA71 /* InfoPlist.strings in Resources */,
+				A590278C1551274000E2AA71 /* MainStoryboard_iPhone.storyboard in Resources */,
+				A590278F1551274000E2AA71 /* MainStoryboard_iPad.storyboard in Resources */,
+				A501D15715520B4A0025B052 /* chrishulbertclosed.png in Resources */,
+				A501D15815520B4A0025B052 /* chrishulbertopen.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A59027701551274000E2AA71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59027851551274000E2AA71 /* main.m in Sources */,
+				A59027891551274000E2AA71 /* chubbsAppDelegate.m in Sources */,
+				A59027921551274000E2AA71 /* chubbsMasterViewController.m in Sources */,
+				A59027951551274000E2AA71 /* chubbsDetailViewController.m in Sources */,
+				A59027D315515C3E00E2AA71 /* NewMessageController.m in Sources */,
+				A59027E01551688E00E2AA71 /* FMDatabase.m in Sources */,
+				A59027E11551688E00E2AA71 /* FMDatabaseAdditions.m in Sources */,
+				A59027E21551688E00E2AA71 /* FMDatabasePool.m in Sources */,
+				A59027E31551688E00E2AA71 /* FMDatabaseQueue.m in Sources */,
+				A59027E51551688E00E2AA71 /* FMResultSet.m in Sources */,
+				A59027EA155168F100E2AA71 /* Messages.m in Sources */,
+				A512A81F1551ED8200B119AF /* MessageEditController.m in Sources */,
+				A501D153155207620025B052 /* MessageCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A59027811551274000E2AA71 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A59027821551274000E2AA71 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A590278A1551274000E2AA71 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A590278B1551274000E2AA71 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		A590278D1551274000E2AA71 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A590278E1551274000E2AA71 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A59027961551274000E2AA71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A59027971551274000E2AA71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A59027991551274000E2AA71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chris5/Chris5-Prefix.pch";
+				INFOPLIST_FILE = "Chris5/Chris5-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A590279A1551274000E2AA71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chris5/Chris5-Prefix.pch";
+				INFOPLIST_FILE = "Chris5/Chris5-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A590276E1551274000E2AA71 /* Build configuration list for PBXProject "Chris5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A59027961551274000E2AA71 /* Debug */,
+				A59027971551274000E2AA71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A59027981551274000E2AA71 /* Build configuration list for PBXNativeTarget "Chris5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A59027991551274000E2AA71 /* Debug */,
+				A590279A1551274000E2AA71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A590276B1551274000E2AA71 /* Project object */;
+}
