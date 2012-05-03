@@ -41,6 +41,14 @@
         [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionMiddle];
     }
     
+    UIImageView *chris = [[UIImageView alloc] init];
+    chris.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"chrishulbertclosed.png"], [UIImage imageNamed:@"chrishulbertopen.png"], nil]; 
+    chris.animationDuration = .2; 
+    chris.animationRepeatCount =0;      
+    chris.frame = CGRectMake(0, 0, 36, 42);
+    [chris startAnimating];
+        
+    self.navigationItem.titleView = chris;
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(edit:)];
 }
 
