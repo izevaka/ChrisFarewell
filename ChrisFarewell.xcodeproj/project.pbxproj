@@ -28,6 +28,7 @@
 		A59027E51551688E00E2AA71 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A59027DF1551688E00E2AA71 /* FMResultSet.m */; };
 		A59027E7155168C200E2AA71 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A59027E6155168C200E2AA71 /* libsqlite3.0.dylib */; };
 		A59027EA155168F100E2AA71 /* Messages.m in Sources */ = {isa = PBXBuildFile; fileRef = A59027E9155168F100E2AA71 /* Messages.m */; };
+		A5BC608D155247970061408A /* messages.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = A5BC608C155247970061408A /* messages.sqlite */; };
 		A5CCF0CE15521362008803C2 /* appIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A5CCF0CD15521362008803C2 /* appIcon.png */; };
 		A5CCF0D01552136D008803C2 /* appIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5CCF0CF1552136D008803C2 /* appIcon@2x.png */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		A59027E6155168C200E2AA71 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		A59027E8155168F000E2AA71 /* Messages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Messages.h; sourceTree = "<group>"; };
 		A59027E9155168F100E2AA71 /* Messages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Messages.m; sourceTree = "<group>"; };
+		A5BC608C155247970061408A /* messages.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = messages.sqlite; sourceTree = "<group>"; };
 		A5CCF0CD15521362008803C2 /* appIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIcon.png; sourceTree = "<group>"; };
 		A5CCF0CF1552136D008803C2 /* appIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appIcon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +93,7 @@
 		A59027691551274000E2AA71 = {
 			isa = PBXGroup;
 			children = (
+				A5BC608C155247970061408A /* messages.sqlite */,
 				A5CCF0CF1552136D008803C2 /* appIcon@2x.png */,
 				A5CCF0CD15521362008803C2 /* appIcon.png */,
 				A501D15615520B4A0025B052 /* chrishulbertopen.png */,
@@ -228,6 +231,7 @@
 				A501D15815520B4A0025B052 /* chrishulbertopen.png in Resources */,
 				A5CCF0CE15521362008803C2 /* appIcon.png in Resources */,
 				A5CCF0D01552136D008803C2 /* appIcon@2x.png in Resources */,
+				A5BC608D155247970061408A /* messages.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

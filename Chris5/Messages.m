@@ -43,6 +43,14 @@
     {
 		NSString* path = [self getSavePath];
         
+        if (![[NSFileManager defaultManager] fileExistsAtPath:path])
+        {
+            
+            NSError *error;
+            NSString *cannedData = [[NSBundle mainBundle] pathForResource:@"messages" ofType:@"sqlite"];
+            [[NSFileManager defaultManager] copyItemAtPath:cannedData toPath:path error:&error];
+        }
+        
 		instance = [Messages databaseWithPath:path];
 		[instance open];
         //create from scratch
