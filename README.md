@@ -10,13 +10,14 @@ For your enjoyment, some messages from people who cann't make it on friday, have
 
 ## Getting started:
 1. Clone this repository
-
+```
     git clone git://github.com/izevaka/ChrisFarewell.git
-
+```
 2. Update submodules:
-
+```
     git submodule update --init
-
+```
 3. Open in XCode:
-
+```
     open ChrisFarewell.xcodeproj/
+```
