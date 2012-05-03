@@ -21,6 +21,7 @@
 @synthesize fromTextField;
 @synthesize message = _message;
 @synthesize button;
+@synthesize buttonCamera;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -152,6 +153,31 @@
 }
 */
 
+-(void)showCamera:(id)sender{
+
+    // Set up the image picker controller and add it to the view
+    UIImagePickerController  *imagePickerController = [[UIImagePickerController alloc] init];
+    imagePickerController.delegate = self;
+    imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+    imagePickerController.allowsEditing = YES;
+    
+    imagePickerController.cameraCaptureMode = UIImagePickerControllerCameraCaptureModePhoto;
+    imagePickerController.cameraDevice = UIImagePickerControllerCameraDeviceFront;
+    // Show image picker
+    [self presentModalViewController:imagePickerController animated:YES];
+    
+}
+-(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    UIImage *image = [info objectForKey:@"UIImagePickerControllerEditedImage"];
+
+    buttonCamera.imageView.image = image;
+
+    // Save image (TODO)
+    //UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+
+    [self dismissModalViewControllerAnimated:YES];
+}
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B4A9D47155249A400599AFD /* iphone_camera_icon_normal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A9D46155249A400599AFD /* iphone_camera_icon_normal.jpg */; };
 		A501D153155207620025B052 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A501D152155207620025B052 /* MessageCell.m */; };
 		A501D15715520B4A0025B052 /* chrishulbertclosed.png in Resources */ = {isa = PBXBuildFile; fileRef = A501D15515520B4A0025B052 /* chrishulbertclosed.png */; };
 		A501D15815520B4A0025B052 /* chrishulbertopen.png in Resources */ = {isa = PBXBuildFile; fileRef = A501D15615520B4A0025B052 /* chrishulbertopen.png */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B4A9D46155249A400599AFD /* iphone_camera_icon_normal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = iphone_camera_icon_normal.jpg; path = ../../Desktop/iphone_camera_icon_normal.jpg; sourceTree = "<group>"; };
 		A501D151155207610025B052 /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
 		A501D152155207620025B052 /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
 		A501D15515520B4A0025B052 /* chrishulbertclosed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chrishulbertclosed.png; path = Chris5/chrishulbertclosed.png; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				A5BC608C155247970061408A /* messages.sqlite */,
+				0B4A9D46155249A400599AFD /* iphone_camera_icon_normal.jpg */,
 				A5CCF0CF1552136D008803C2 /* appIcon@2x.png */,
 				A5CCF0CD15521362008803C2 /* appIcon.png */,
 				A501D15615520B4A0025B052 /* chrishulbertopen.png */,
@@ -231,7 +234,9 @@
 				A501D15815520B4A0025B052 /* chrishulbertopen.png in Resources */,
 				A5CCF0CE15521362008803C2 /* appIcon.png in Resources */,
 				A5CCF0D01552136D008803C2 /* appIcon@2x.png in Resources */,
+
 				A5BC608D155247970061408A /* messages.sqlite in Resources */,
+				0B4A9D47155249A400599AFD /* iphone_camera_icon_normal.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
