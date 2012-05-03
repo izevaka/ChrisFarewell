@@ -15,10 +15,24 @@
 
 -(void) addMessage:(Message*)message;
 {
-    [self executeUpdate:@"insert into messages(name, message) values (?, ?)", message.from, message.message];
+    if (message.messageId) 
+    {
+        [self executeUpdate:@"update messages set name = ?, message = ? where rowid = ?", message.from, message.message, message.messageId];        
+    }
+    else {
+        [self executeUpdate:@"insert into messages(name, message) values (?, ?)", message.from, message.message];        
+    }
+
     [self logError];
 }
 
+-(void) deleteMessage:(Message*)message
+{
+    if (message.messageId) {
+        [self executeUpdate:@"delete from messages where rowid = ?", message.messageId];
+    }
+    [self logError];
+}
 -(NSArray*) messages
 {
     FMResultSet *result = [self executeQuery:@"select rowid, name, message from messages;"];

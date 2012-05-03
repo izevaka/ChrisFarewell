@@ -15,6 +15,8 @@
     NSArray *messages;
 }
 
+- (IBAction)edit:(id)sender;
+
 @property (strong, nonatomic) chubbsDetailViewController *detailViewController;
 
 

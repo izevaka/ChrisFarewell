@@ -158,6 +158,9 @@
 {
     [super viewDidLoad];
     messageTextView.layer.cornerRadius = 10;
+    
+    messageTextView.text = self.message.message;
+    fromTextField.text = self.message.from;
 }
 
 

@@ -19,6 +19,7 @@
 
 //operations
 -(void) addMessage:(Message*)message;
+-(void) deleteMessage:(Message*)message;
 @property (strong, nonatomic, readonly) NSArray* messages;
 
 

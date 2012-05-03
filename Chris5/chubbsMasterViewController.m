@@ -10,12 +10,10 @@
 #import "chubbsMasterViewController.h"
 #import "Messages.h"
 
-
-
-
 @implementation chubbsMasterViewController
 
 @synthesize detailViewController = _detailViewController;
+
 
 - (void)awakeFromNib
 {
@@ -43,7 +41,7 @@
         [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionMiddle];
     }
     
-    //self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc ] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(add)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(edit:)];
 }
 
 
@@ -64,7 +62,7 @@
     UIImageView *chris = (UIImageView*)[cell viewWithTag:100];
     if (!chris.animationImages) {
         chris.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"chrishulbertclosed.png"], [UIImage imageNamed:@"chrishulbertopen.png"], nil]; 
-        chris.animationDuration = .2; 
+        chris.animationDuration = (arc4random() % 10) / 50.0 + 0.3 ; 
         chris.animationRepeatCount =0;      
     }
     
@@ -77,26 +75,42 @@
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-	if ([segue.identifier isEqualToString:@"AddMessage"])
+    UITableViewCell* cell = sender;
+    NSInteger row = [self.tableView indexPathForCell:cell].row;
+    
+	if ([segue.identifier isEqualToString:@"AddMessage"] || [segue.identifier isEqualToString:@"EditWholeMessage"])
 	{
 		UINavigationController *navigationController = 
         segue.destinationViewController;
 		NewMessageController  *newMessageController = 
         [[navigationController viewControllers] 
          objectAtIndex:0];
+        
 		newMessageController.delegate = self;
+        
+        if ([segue.identifier isEqualToString:@"EditWholeMessage"])
+        {
+            newMessageController.message = [messages objectAtIndex:row];
+        }
 	}
     
     if ([segue.identifier isEqualToString:@"ShowMessage"])
-    {
-        UITableViewCell* cell = sender;
-        NSInteger row = [self.tableView indexPathForCell:cell].row;
-        
+    {   
 		chubbsDetailViewController  *detailsController = segue.destinationViewController;
         detailsController.detailItem = [messages objectAtIndex:row];
     }
+    
+    
 }
 
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (self.tableView.isEditing) {
+        [self performSegueWithIdentifier:@"EditWholeMessage" sender:[tableView cellForRowAtIndexPath:indexPath] ];
+    } else {
+        [self performSegueWithIdentifier:@"ShowMessage" sender:[tableView cellForRowAtIndexPath:indexPath]];        
+    }
+}
 
 
 - (void)viewDidUnload
@@ -150,27 +164,39 @@
     }
 }
 
-/*
+
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
-*/
 
-/*
+- (IBAction)edit:(id)sender
+{
+    if (self.tableView.isEditing) 
+    {
+        [self.tableView setEditing:NO animated:YES];
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(edit:)];
+    }
+    else
+    {
+        [self.tableView setEditing:YES animated:YES];
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(edit:)];
+    }
+}
+
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source.
+    if (editingStyle == UITableViewCellEditingStyleDelete) 
+    {
+        [[Messages sharedInstance] deleteMessage: [messages objectAtIndex: indexPath.row]];
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
     }   
 }
-*/
+
 
 /*
 // Override to support rearranging the table view.
