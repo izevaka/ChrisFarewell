@@ -12,8 +12,8 @@
 
 @protocol MessageEditControllerDelegate <NSObject>
 
-- (void) messageControllerDidCancel:(MessageEditController*)controller;
-- (void) messageControllerDidSave:(MessageEditController*)controller;
+- (void) messageEditControllerDidCancel:(MessageEditController*)controller;
+- (void) messageEditControllerDidSave:(MessageEditController*)controller;
 
 @end
 

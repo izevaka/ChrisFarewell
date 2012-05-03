@@ -18,7 +18,6 @@
 		A59027851551274000E2AA71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A59027841551274000E2AA71 /* main.m */; };
 		A59027891551274000E2AA71 /* chubbsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A59027881551274000E2AA71 /* chubbsAppDelegate.m */; };
 		A590278C1551274000E2AA71 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A590278A1551274000E2AA71 /* MainStoryboard_iPhone.storyboard */; };
-		A590278F1551274000E2AA71 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A590278D1551274000E2AA71 /* MainStoryboard_iPad.storyboard */; };
 		A59027921551274000E2AA71 /* chubbsMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59027911551274000E2AA71 /* chubbsMasterViewController.m */; };
 		A59027951551274000E2AA71 /* chubbsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59027941551274000E2AA71 /* chubbsDetailViewController.m */; };
 		A59027D315515C3E00E2AA71 /* NewMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59027D215515C3E00E2AA71 /* NewMessageController.m */; };
@@ -44,14 +43,13 @@
 		A59027781551274000E2AA71 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A590277A1551274000E2AA71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A590277C1551274000E2AA71 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A59027801551274000E2AA71 /* ChrisFarewell-Info.plist */ = {isa = PBXFileReference; path = "ChrisFarewell-Info.plist"; sourceTree = "<group>"; };
+		A59027801551274000E2AA71 /* ChrisFarewell-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChrisFarewell-Info.plist"; sourceTree = "<group>"; };
 		A59027821551274000E2AA71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A59027841551274000E2AA71 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A59027861551274000E2AA71 /* Chris5-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chris5-Prefix.pch"; sourceTree = "<group>"; };
 		A59027871551274000E2AA71 /* chubbsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chubbsAppDelegate.h; sourceTree = "<group>"; };
 		A59027881551274000E2AA71 /* chubbsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chubbsAppDelegate.m; sourceTree = "<group>"; };
 		A590278B1551274000E2AA71 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		A590278E1551274000E2AA71 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		A59027901551274000E2AA71 /* chubbsMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chubbsMasterViewController.h; sourceTree = "<group>"; };
 		A59027911551274000E2AA71 /* chubbsMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chubbsMasterViewController.m; sourceTree = "<group>"; };
 		A59027931551274000E2AA71 /* chubbsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chubbsDetailViewController.h; sourceTree = "<group>"; };
@@ -129,7 +127,6 @@
 				A59027871551274000E2AA71 /* chubbsAppDelegate.h */,
 				A59027881551274000E2AA71 /* chubbsAppDelegate.m */,
 				A590278A1551274000E2AA71 /* MainStoryboard_iPhone.storyboard */,
-				A590278D1551274000E2AA71 /* MainStoryboard_iPad.storyboard */,
 				A59027901551274000E2AA71 /* chubbsMasterViewController.h */,
 				A59027911551274000E2AA71 /* chubbsMasterViewController.m */,
 				A59027931551274000E2AA71 /* chubbsDetailViewController.h */,
@@ -227,7 +224,6 @@
 			files = (
 				A59027831551274000E2AA71 /* InfoPlist.strings in Resources */,
 				A590278C1551274000E2AA71 /* MainStoryboard_iPhone.storyboard in Resources */,
-				A590278F1551274000E2AA71 /* MainStoryboard_iPad.storyboard in Resources */,
 				A501D15715520B4A0025B052 /* chrishulbertclosed.png in Resources */,
 				A501D15815520B4A0025B052 /* chrishulbertopen.png in Resources */,
 				A5CCF0CE15521362008803C2 /* appIcon.png in Resources */,
@@ -275,14 +271,6 @@
 				A590278B1551274000E2AA71 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		A590278D1551274000E2AA71 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A590278E1551274000E2AA71 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -343,6 +331,7 @@
 				INFOPLIST_FILE = "Chris5/ChrisFarewell-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = ChrisFarewell;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -355,6 +344,7 @@
 				INFOPLIST_FILE = "Chris5/ChrisFarewell-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = ChrisFarewell;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

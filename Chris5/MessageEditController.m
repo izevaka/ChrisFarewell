@@ -31,11 +31,11 @@
 
 - (IBAction)cancel:(id)sender
 {
-    [delegate messageControllerDidCancel:self];
+    [delegate messageEditControllerDidCancel:self];
 }
 - (IBAction)save:(id)sender
 {
-    [delegate messageControllerDidSave:self];    
+    [delegate messageEditControllerDidSave:self];    
 }
 
 

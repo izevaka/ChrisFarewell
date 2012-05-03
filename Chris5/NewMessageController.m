@@ -78,12 +78,12 @@
 	}
 }
 
-- (void)messageControllerDidCancel:(MessageEditController*)controller
+- (void)messageEditControllerDidCancel:(MessageEditController*)controller
 {
     [self dismissModalViewControllerAnimated:YES];   
 }
 
-- (void)messageControllerDidSave:(MessageEditController*)controller
+- (void)messageEditControllerDidSave:(MessageEditController*)controller
 {
     messageTextView.text = controller.textView.text;
     [self dismissModalViewControllerAnimated:YES];
