@@ -316,7 +316,6 @@
             <point key="canvasLocation" x="1905" y="655"/>
         </scene>
     </scenes>
-<<<<<<< HEAD
     <classes>
         <class className="MessageCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MessageCell.h"/>
@@ -353,11 +352,9 @@
             </relationships>
         </class>
     </classes>
-=======
     <resources>
         <image name="iphone_camera_icon_normal.jpg" width="48" height="48"/>
     </resources>
->>>>>>> Added camera to message - needs to be saved in DB
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
