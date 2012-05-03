@@ -114,7 +114,7 @@
     }
     
     
-    return CGRectOffset(self.view.frame, xMovement, yMovement);
+    return CGRectOffset(self.view.frame, 0, xMovement + yMovement);
 }
 
 - (void) animateTextFieldWithUp: (BOOL) up
@@ -169,7 +169,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    [self animateTextFieldWithUp: NO];
+    [self.fromTextField resignFirstResponder];
     // Return YES for supported orientations
     return YES;
 }

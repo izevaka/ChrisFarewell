@@ -29,6 +29,8 @@
 		A59027E51551688E00E2AA71 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A59027DF1551688E00E2AA71 /* FMResultSet.m */; };
 		A59027E7155168C200E2AA71 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A59027E6155168C200E2AA71 /* libsqlite3.0.dylib */; };
 		A59027EA155168F100E2AA71 /* Messages.m in Sources */ = {isa = PBXBuildFile; fileRef = A59027E9155168F100E2AA71 /* Messages.m */; };
+		A5CCF0CE15521362008803C2 /* appIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A5CCF0CD15521362008803C2 /* appIcon.png */; };
+		A5CCF0D01552136D008803C2 /* appIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5CCF0CF1552136D008803C2 /* appIcon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,11 +40,11 @@
 		A501D15615520B4A0025B052 /* chrishulbertopen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chrishulbertopen.png; path = Chris5/chrishulbertopen.png; sourceTree = "<group>"; };
 		A512A81D1551ED8200B119AF /* MessageEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageEditController.h; sourceTree = "<group>"; };
 		A512A81E1551ED8200B119AF /* MessageEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageEditController.m; sourceTree = "<group>"; };
-		A59027741551274000E2AA71 /* Chris5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chris5.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A59027741551274000E2AA71 /* ChrisFarewell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChrisFarewell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A59027781551274000E2AA71 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A590277A1551274000E2AA71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A590277C1551274000E2AA71 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A59027801551274000E2AA71 /* Chris5-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Chris5-Info.plist"; sourceTree = "<group>"; };
+		A59027801551274000E2AA71 /* ChrisFarewell-Info.plist */ = {isa = PBXFileReference; path = "ChrisFarewell-Info.plist"; sourceTree = "<group>"; };
 		A59027821551274000E2AA71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A59027841551274000E2AA71 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A59027861551274000E2AA71 /* Chris5-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chris5-Prefix.pch"; sourceTree = "<group>"; };
@@ -69,6 +71,8 @@
 		A59027E6155168C200E2AA71 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		A59027E8155168F000E2AA71 /* Messages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Messages.h; sourceTree = "<group>"; };
 		A59027E9155168F100E2AA71 /* Messages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Messages.m; sourceTree = "<group>"; };
+		A5CCF0CD15521362008803C2 /* appIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIcon.png; sourceTree = "<group>"; };
+		A5CCF0CF1552136D008803C2 /* appIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appIcon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +93,10 @@
 		A59027691551274000E2AA71 = {
 			isa = PBXGroup;
 			children = (
-				A501D15515520B4A0025B052 /* chrishulbertclosed.png */,
+				A5CCF0CF1552136D008803C2 /* appIcon@2x.png */,
+				A5CCF0CD15521362008803C2 /* appIcon.png */,
 				A501D15615520B4A0025B052 /* chrishulbertopen.png */,
+				A501D15515520B4A0025B052 /* chrishulbertclosed.png */,
 				A59027E6155168C200E2AA71 /* libsqlite3.0.dylib */,
 				A590277E1551274000E2AA71 /* Chris5 */,
 				A59027771551274000E2AA71 /* Frameworks */,
@@ -101,7 +107,7 @@
 		A59027751551274000E2AA71 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A59027741551274000E2AA71 /* Chris5.app */,
+				A59027741551274000E2AA71 /* ChrisFarewell.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,7 +150,7 @@
 		A590277F1551274000E2AA71 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A59027801551274000E2AA71 /* Chris5-Info.plist */,
+				A59027801551274000E2AA71 /* ChrisFarewell-Info.plist */,
 				A59027811551274000E2AA71 /* InfoPlist.strings */,
 				A59027841551274000E2AA71 /* main.m */,
 				A59027861551274000E2AA71 /* Chris5-Prefix.pch */,
@@ -172,9 +178,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A59027731551274000E2AA71 /* Chris5 */ = {
+		A59027731551274000E2AA71 /* ChrisFarewell */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A59027981551274000E2AA71 /* Build configuration list for PBXNativeTarget "Chris5" */;
+			buildConfigurationList = A59027981551274000E2AA71 /* Build configuration list for PBXNativeTarget "ChrisFarewell" */;
 			buildPhases = (
 				A59027701551274000E2AA71 /* Sources */,
 				A59027711551274000E2AA71 /* Frameworks */,
@@ -184,9 +190,9 @@
 			);
 			dependencies = (
 			);
-			name = Chris5;
+			name = ChrisFarewell;
 			productName = Chris5;
-			productReference = A59027741551274000E2AA71 /* Chris5.app */;
+			productReference = A59027741551274000E2AA71 /* ChrisFarewell.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -197,7 +203,7 @@
 			attributes = {
 				LastUpgradeCheck = 0420;
 			};
-			buildConfigurationList = A590276E1551274000E2AA71 /* Build configuration list for PBXProject "Chris5" */;
+			buildConfigurationList = A590276E1551274000E2AA71 /* Build configuration list for PBXProject "ChrisFarewell" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -209,7 +215,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A59027731551274000E2AA71 /* Chris5 */,
+				A59027731551274000E2AA71 /* ChrisFarewell */,
 			);
 		};
 /* End PBXProject section */
@@ -224,6 +230,8 @@
 				A590278F1551274000E2AA71 /* MainStoryboard_iPad.storyboard in Resources */,
 				A501D15715520B4A0025B052 /* chrishulbertclosed.png in Resources */,
 				A501D15815520B4A0025B052 /* chrishulbertopen.png in Resources */,
+				A5CCF0CE15521362008803C2 /* appIcon.png in Resources */,
+				A5CCF0D01552136D008803C2 /* appIcon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,9 +340,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Chris5/Chris5-Prefix.pch";
-				INFOPLIST_FILE = "Chris5/Chris5-Info.plist";
+				INFOPLIST_FILE = "Chris5/ChrisFarewell-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ChrisFarewell;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -344,9 +352,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Chris5/Chris5-Prefix.pch";
-				INFOPLIST_FILE = "Chris5/Chris5-Info.plist";
+				INFOPLIST_FILE = "Chris5/ChrisFarewell-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ChrisFarewell;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -354,7 +362,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A590276E1551274000E2AA71 /* Build configuration list for PBXProject "Chris5" */ = {
+		A590276E1551274000E2AA71 /* Build configuration list for PBXProject "ChrisFarewell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A59027961551274000E2AA71 /* Debug */,
@@ -363,7 +371,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A59027981551274000E2AA71 /* Build configuration list for PBXNativeTarget "Chris5" */ = {
+		A59027981551274000E2AA71 /* Build configuration list for PBXNativeTarget "ChrisFarewell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A59027991551274000E2AA71 /* Debug */,
