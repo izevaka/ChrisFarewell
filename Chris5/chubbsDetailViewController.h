@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Message;
 
 @interface chubbsDetailViewController : UIViewController <UISplitViewControllerDelegate>
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) Message* detailItem;
 
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *photo;
 @property (strong, nonatomic) IBOutlet UITextView *messageTextView;
 
 

@@ -65,18 +65,26 @@
     UITableViewCell* cell = [self.tableView dequeueReusableCellWithIdentifier:@"cell"];
     
     UILabel *textLabel = (UILabel*)[cell viewWithTag:102];
-    textLabel.text = [[messages objectAtIndex:indexPath.row] from];
+    Message* message = [messages objectAtIndex:indexPath.row];
+    textLabel.text = message.from;
     
     UIImageView *chris = (UIImageView*)[cell viewWithTag:100];
-    if (!chris.animationImages) {
-        chris.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"chrishulbertclosed.png"], [UIImage imageNamed:@"chrishulbertopen.png"], nil]; 
-        chris.animationDuration = (arc4random() % 10) / 50.0 + 0.3 ; 
-        chris.animationRepeatCount =0;      
-    }
     
-    if (!chris.isAnimating)
-    {
-                [chris startAnimating];
+    if (!message.photo) {
+        
+        if (!chris.animationImages) {
+            chris.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"chrishulbertclosed.png"], [UIImage imageNamed:@"chrishulbertopen.png"], nil]; 
+            chris.animationDuration = (arc4random() % 10) / 50.0 + 0.3 ; 
+            chris.animationRepeatCount =0;      
+        }
+        
+        if (!chris.isAnimating)
+        {
+            [chris startAnimating];
+        }
+    } else {
+        chris.animationImages = nil;
+        chris.image = message.photo;
     }
     
     return cell;

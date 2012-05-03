@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="3">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="10K549" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="3">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
         <scene sceneID="11">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
@@ -21,7 +19,6 @@
             </objects>
             <point key="canvasLocation" x="-1" y="64"/>
         </scene>
-        <!--Chubbs Master View Controller - Master-->
         <scene sceneID="18">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
@@ -83,7 +80,6 @@
             </objects>
             <point key="canvasLocation" x="455" y="64"/>
         </scene>
-        <!--New Message Controller-->
         <scene sceneID="2Rf-AO-BKw">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hnj-pW-4NQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -152,7 +148,8 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gEJ-eL-yNe">
                                 <rect key="frame" x="252" y="351" width="48" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="iphone_camera_icon_normal.jpg">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -190,7 +187,6 @@
             </objects>
             <point key="canvasLocation" x="1467" y="649"/>
         </scene>
-        <!--Message Edit Controller-->
         <scene sceneID="t5j-rt-GLb">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oXy-Wl-kUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -228,7 +224,6 @@
             </objects>
             <point key="canvasLocation" x="2431" y="655"/>
         </scene>
-        <!--Chubbs Detail View Controller - Detail-->
         <scene sceneID="24">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="23" sceneMemberID="firstResponder"/>
@@ -245,27 +240,31 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Love you, man," lineBreakMode="tailTruncation" minimumFontSize="13" id="ZTm-zt-rjP">
-                                <rect key="frame" x="20" y="348" width="138" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="162" y="342" width="138" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="13" id="jry-ad-V6s">
-                                <rect key="frame" x="20" y="395" width="280" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="74" y="395" width="226" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="Yr4-NB-bJZ">
-                                <rect key="frame" x="20" y="73" width="280" height="223"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="20" y="73" width="280" height="261"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92857142859999997" green="0.92857142859999997" blue="0.92857142859999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="0j6-O0-GlZ">
+                                <rect key="frame" x="20" y="363" width="79" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.9285714285714286" green="0.9285714285714286" blue="0.9285714285714286" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -273,12 +272,12 @@
                     <connections>
                         <outlet property="messageTextView" destination="Yr4-NB-bJZ" id="YOd-PJ-YUU"/>
                         <outlet property="nameLabel" destination="jry-ad-V6s" id="VVf-cv-4WX"/>
+                        <outlet property="photo" destination="0j6-O0-GlZ" id="Fwq-bG-Yxm"/>
                     </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1450" y="64"/>
         </scene>
-        <!--Navigation Controller-->
         <scene sceneID="2rx-sd-WHa">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Uy-YV-rDg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -296,7 +295,6 @@
             </objects>
             <point key="canvasLocation" x="941" y="649"/>
         </scene>
-        <!--Navigation Controller-->
         <scene sceneID="H7k-M8-hWW">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D9q-UX-Laq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -316,42 +314,6 @@
             <point key="canvasLocation" x="1905" y="655"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="MessageCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MessageCell.h"/>
-        </class>
-        <class className="MessageEditController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MessageEditController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="action" name="save:"/>
-                <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="NewMessageController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewMessageController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="action" name="done:"/>
-                <relationship kind="outlet" name="button" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="fromTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="messageTextView" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="chubbsDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/chubbsDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="messageTextView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="chubbsMasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/chubbsMasterViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="edit:"/>
-            </relationships>
-        </class>
-    </classes>
     <resources>
         <image name="iphone_camera_icon_normal.jpg" width="48" height="48"/>
     </resources>

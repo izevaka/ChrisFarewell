@@ -191,6 +191,10 @@
     
     messageTextView.text = self.message.message;
     fromTextField.text = self.message.from;
+    if (self.message.photo) 
+    {
+        buttonCamera.imageView.image = self.message.photo;
+    }
 }
 
 
@@ -203,7 +207,10 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    [self.fromTextField resignFirstResponder];
+    if (self.interfaceOrientation != interfaceOrientation) 
+    {
+        [self.fromTextField resignFirstResponder];
+    }
     // Return YES for supported orientations
     return YES;
 }

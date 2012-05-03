@@ -18,11 +18,11 @@
 
 @synthesize detailItem = _detailItem;
 @synthesize masterPopoverController = _masterPopoverController;
-@synthesize nameLabel, messageTextView;
+@synthesize nameLabel, messageTextView, photo;
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem
+- (void)setDetailItem:(Message*)newDetailItem
 {
     if (_detailItem != newDetailItem) {
         _detailItem = newDetailItem;
@@ -42,7 +42,8 @@
 
     if (self.detailItem) {
         self.messageTextView.text = [self.detailItem message];
-        self.nameLabel.text= [(Message*)self.detailItem from];
+        self.nameLabel.text= [self.detailItem from];
+        self.photo.image = self.detailItem.photo;
     }
 }
 

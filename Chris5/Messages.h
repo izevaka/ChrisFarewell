@@ -21,6 +21,7 @@
 //operations
 -(void) addMessage:(Message*)message;
 -(void) deleteMessage:(Message*)message;
+- (UIImage*) loadPhotoForMessageId:(NSNumber*)messageId;
 @property (strong, nonatomic, readonly) NSArray* messages;
 
 

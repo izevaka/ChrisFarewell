@@ -10,7 +10,15 @@
 #import "FMDatabaseAdditions.h"
 
 @implementation Message
-@synthesize from,message, messageId; 
+@synthesize from,message, messageId, photo = _photo;
+
+- (UIImage *) photo
+{
+    if (!_photo && self.messageId) {
+        _photo = [[Messages sharedInstance] loadPhotoForMessageId:self.messageId];
+    }
+    return _photo;
+}
 @end
 
 @implementation Messages
@@ -58,6 +66,19 @@
     return messages;
 }
 
+- (UIImage*) loadPhotoForMessageId:(NSNumber *)messageId
+{
+    FMResultSet *result = [self executeQuery:@"select photo from messages where rowid = ?;", messageId];
+    [self logError];
+    if ([result next])
+    {
+        NSData* data = [result dataForColumnIndex:0];
+        return [UIImage imageWithData:data];
+    }
+    
+    return nil;
+}
+
 + (Messages*)sharedInstance {
 	
     static Messages* instance=nil;
@@ -95,7 +116,7 @@
      "(name text,"
      "message text)"];
     
-    if (![self columnExists:@"messages" columnName: @"image"]) {
+    if (![self columnExists:@"messages" columnName: @"photo"]) {
         [self runCommandAndLog:@"alter table messages add column photo blob;"];
     }
 }
