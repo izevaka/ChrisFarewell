@@ -10,7 +10,7 @@
 
 @implementation MessageEditController
 @synthesize textView;
-@synthesize delegate;
+@synthesize delegate, message;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,6 +35,7 @@
 }
 - (IBAction)save:(id)sender
 {
+    self.message = textView.text;
     [delegate messageEditControllerDidSave:self];    
 }
 
@@ -52,6 +53,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
+    textView.text = message;
     [super viewDidLoad];
     
     [textView becomeFirstResponder];

@@ -21,6 +21,7 @@
 
 @property (strong, nonatomic) IBOutlet UITextView* textView;
 @property (weak, nonatomic) id<MessageEditControllerDelegate> delegate;
+@property (strong, nonatomic) NSString* message;
 
 - (IBAction)cancel:(id)sender;
 - (IBAction)save:(id)sender;

@@ -63,7 +63,7 @@
     
     UIImageView *chris = (UIImageView*)[cell viewWithTag:100];
     if (!chris.animationImages) {
-        chris.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"ChrisHulbertOpen.png"], [UIImage imageNamed:@"ChrisHulbertClosed.png"], nil]; 
+        chris.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"chrishulbertclosed.png"], [UIImage imageNamed:@"chrishulbertopen.png"], nil]; 
         chris.animationDuration = .2; 
         chris.animationRepeatCount =0;      
     }

@@ -68,7 +68,7 @@
                             <outlet property="delegate" destination="12" id="15"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="35">
+                    <navigationItem key="navigationItem" title="Farewell" id="35">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="hMG-cr-B6r">
                             <connections>
                                 <segue destination="O2d-hg-XIX" kind="modal" identifier="AddMessage" id="O5A-CV-RNe"/>
@@ -246,7 +246,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.9285714285714286" green="0.9285714285714286" blue="0.9285714285714286" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Detail" id="26"/>
+                    <navigationItem key="navigationItem" title="Goodbye..." id="26"/>
                     <connections>
                         <outlet property="messageTextView" destination="Yr4-NB-bJZ" id="YOd-PJ-YUU"/>
                         <outlet property="nameLabel" destination="jry-ad-V6s" id="VVf-cv-4WX"/>
@@ -291,39 +291,6 @@
             <point key="canvasLocation" x="1905" y="655"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="MessageCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MessageCell.h"/>
-        </class>
-        <class className="MessageEditController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MessageEditController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="action" name="save:"/>
-                <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="NewMessageController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewMessageController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="action" name="done:"/>
-                <relationship kind="outlet" name="button" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="fromTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="messageTextView" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="chubbsDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/chubbsDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="messageTextView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="chubbsMasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/chubbsMasterViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

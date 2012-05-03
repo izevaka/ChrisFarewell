@@ -74,6 +74,7 @@
 	{
 		UINavigationController *navigationController = segue.destinationViewController;
 		MessageEditController  *controller = [[navigationController viewControllers] objectAtIndex:0];
+        controller.message = messageTextView.text;
 		controller.delegate = self;
 	}
 }
@@ -85,7 +86,7 @@
 
 - (void)messageEditControllerDidSave:(MessageEditController*)controller
 {
-    messageTextView.text = controller.textView.text;
+    messageTextView.text = controller.message;
     [self dismissModalViewControllerAnimated:YES];
 }
 
