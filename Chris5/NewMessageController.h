@@ -22,15 +22,17 @@
 
 @end
 
-@interface NewMessageController : UIViewController
+@interface NewMessageController : UIViewController< UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (weak, nonatomic) id<NewMessageControllerDelegate> delegate;
 @property (strong, nonatomic) IBOutlet UITextView *messageTextView;
 @property (strong, nonatomic) IBOutlet UITextField *fromTextField;
 @property (strong, nonatomic) IBOutlet UIButton *button;
+@property (strong, nonatomic) IBOutlet UIButton *buttonCamera;
 @property (strong, nonatomic) Message *message;
 
 - (IBAction)cancel:(id)sender;
 - (IBAction)done:(id)sender;
+- (IBAction)showCamera:(id)sender;
 
 @end
