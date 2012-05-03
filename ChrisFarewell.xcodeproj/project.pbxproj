@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B4A9D6F1552763900599AFD /* iphone_camera_icon_normal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A9D6E1552763900599AFD /* iphone_camera_icon_normal.jpg */; };
 		A501D153155207620025B052 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A501D152155207620025B052 /* MessageCell.m */; };
 		A501D15715520B4A0025B052 /* chrishulbertclosed.png in Resources */ = {isa = PBXBuildFile; fileRef = A501D15515520B4A0025B052 /* chrishulbertclosed.png */; };
 		A501D15815520B4A0025B052 /* chrishulbertopen.png in Resources */ = {isa = PBXBuildFile; fileRef = A501D15615520B4A0025B052 /* chrishulbertopen.png */; };
 		A512A81F1551ED8200B119AF /* MessageEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = A512A81E1551ED8200B119AF /* MessageEditController.m */; };
+		A51EF70C15534A0800550325 /* camera_48.png in Resources */ = {isa = PBXBuildFile; fileRef = A51EF70B15534A0800550325 /* camera_48.png */; };
 		A59027791551274000E2AA71 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59027781551274000E2AA71 /* UIKit.framework */; };
 		A590277B1551274000E2AA71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A590277A1551274000E2AA71 /* Foundation.framework */; };
 		A590277D1551274000E2AA71 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A590277C1551274000E2AA71 /* CoreGraphics.framework */; };
@@ -35,13 +35,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B4A9D6E1552763900599AFD /* iphone_camera_icon_normal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iphone_camera_icon_normal.jpg; sourceTree = "<group>"; };
 		A501D151155207610025B052 /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
 		A501D152155207620025B052 /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
 		A501D15515520B4A0025B052 /* chrishulbertclosed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chrishulbertclosed.png; path = Chris5/chrishulbertclosed.png; sourceTree = "<group>"; };
 		A501D15615520B4A0025B052 /* chrishulbertopen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chrishulbertopen.png; path = Chris5/chrishulbertopen.png; sourceTree = "<group>"; };
 		A512A81D1551ED8200B119AF /* MessageEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageEditController.h; sourceTree = "<group>"; };
 		A512A81E1551ED8200B119AF /* MessageEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageEditController.m; sourceTree = "<group>"; };
+		A51EF70B15534A0800550325 /* camera_48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_48.png; sourceTree = "<group>"; };
 		A59027741551274000E2AA71 /* ChrisFarewell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChrisFarewell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A59027781551274000E2AA71 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A590277A1551274000E2AA71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -95,7 +95,7 @@
 		A59027691551274000E2AA71 = {
 			isa = PBXGroup;
 			children = (
-				0B4A9D6E1552763900599AFD /* iphone_camera_icon_normal.jpg */,
+				A51EF70B15534A0800550325 /* camera_48.png */,
 				A5BC608C155247970061408A /* messages.sqlite */,
 				A5CCF0CF1552136D008803C2 /* appIcon@2x.png */,
 				A5CCF0CD15521362008803C2 /* appIcon.png */,
@@ -235,7 +235,7 @@
 				A5CCF0CE15521362008803C2 /* appIcon.png in Resources */,
 				A5CCF0D01552136D008803C2 /* appIcon@2x.png in Resources */,
 				A5BC608D155247970061408A /* messages.sqlite in Resources */,
-				0B4A9D6F1552763900599AFD /* iphone_camera_icon_normal.jpg in Resources */,
+				A51EF70C15534A0800550325 /* camera_48.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
