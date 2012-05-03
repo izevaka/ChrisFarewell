@@ -7,6 +7,8 @@
 //
 
 #import "Messages.h"
+#import "FMDatabaseAdditions.h"
+
 @implementation Message
 @synthesize from,message, messageId; 
 @end
@@ -15,14 +17,21 @@
 
 -(void) addMessage:(Message*)message;
 {
-    if (message.messageId) 
-    {
-        [self executeUpdate:@"update messages set name = ?, message = ? where rowid = ?", message.from, message.message, message.messageId];        
-    }
-    else {
-        [self executeUpdate:@"insert into messages(name, message) values (?, ?)", message.from, message.message];        
+    NSData *imgData = [NSNull null];
+    
+    if (message.photo) {
+        imgData = UIImagePNGRepresentation(message.photo);
     }
 
+    
+    if (message.messageId) 
+    {
+        [self executeUpdate:@"update messages set name = ?, message = ?, photo = ? where rowid = ?", message.from, message.message, imgData, message.messageId];        
+    }
+    else {
+        [self executeUpdate:@"insert into messages(name, message, photo) values (?, ?, ?)", message.from, message.message, imgData];        
+    }
+    
     [self logError];
 }
 
@@ -85,6 +94,10 @@
     [self runCommandAndLog:@"create table if not exists messages"
      "(name text,"
      "message text)"];
+    
+    if (![self columnExists:@"messages" columnName: @"image"]) {
+        [self runCommandAndLog:@"alter table messages add column photo blob;"];
+    }
 }
 
 - (void) runCommandAndLog: (NSString*)cmd

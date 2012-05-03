@@ -172,6 +172,10 @@
     UIImage *image = [info objectForKey:@"UIImagePickerControllerEditedImage"];
 
     buttonCamera.imageView.image = image;
+    if (!self.message) {
+        self.message = [[Message alloc] init];
+        self.message.photo = image;
+    }
 
     // Save image (TODO)
     //UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);

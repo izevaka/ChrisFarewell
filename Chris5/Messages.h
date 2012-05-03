@@ -13,6 +13,7 @@
 @property (strong, nonatomic) NSString* from;
 @property (strong, nonatomic) NSString* message;
 @property (strong, nonatomic) NSNumber* messageId;
+@property (strong, nonatomic) UIImage* photo;
 @end
 
 @interface Messages :  FMDatabase
